@@ -1,5 +1,5 @@
-# Edusys
-EduSys is a web based attendance and marks tracking system for school and colleges. Teachers can hand out information regarding
+# 
+Attendie is a web based attendance and marks tracking system for school and colleges. Teachers can hand out information regarding
 marks and attendance of student to the respective students and their parents.
 This is simple to use and easy to set up. It can be extended by simply adding newer addons.
 
