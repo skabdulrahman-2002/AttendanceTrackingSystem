@@ -1,0 +1,112 @@
+#attendance_main{
+    margin-top : 3em;
+    display: table;
+    margin-left : 8em;
+}
+h2{
+    text-align: center;
+}
+.student_name{
+    float: left;
+}
+
+.studentRoll{
+    margin-left: 12em;
+}
+#header{
+    color : black;
+
+}
+.student_check, .student_name{
+    display: table-cell;
+    margin-left : 12em;
+    margin-bottom: 2px;
+}
+.student_name{
+    width:20em;
+    font-size: 1.5em;
+}
+input[type="checkbox"]{
+cursor: pointer;
+-webkit-appearance: none;
+background: #34495E;
+position: relative;
+box-sizing: content-box ;
+width: 15px;
+height: 15px;
+border-width: 0;
+border-radius: 25%;
+transition: all .3s linear;
+}
+input[type="checkbox"]:checked{
+  background-color: #2ECC71;
+}
+input[type="checkbox"]:focus{
+  outline: 0 none;
+  box-shadow: none;
+}
+.btn-default{
+    margin-left: 30em;
+    margin-top: 2em;
+    width : 40%
+}
+
+@media (max-width: 800px) {
+    .student_check, .student_name{
+        margin-left: 3%;
+    }
+    .student_name{
+        width : 14em;
+    }
+    input[type="checkbox"]{
+        width : 35px;
+    }
+    .btn-default{
+        width:100%;
+        margin-left: 0;
+    }
+    .student_name label{
+    font-weight: 500;
+    margin-left: 2.8em;
+        font-size : 1.3em;
+
+    }
+    #attendance_main{
+        margin-left:0;
+    }
+    .student_roll, .student_name{
+        font-weight: 500;
+        font-size : 1.3em;
+    }
+    .student_name label{
+        margin-left : 2em;
+        margin-right: -0.5em;
+    }
+
+}
+@media (min-width: 800px){
+    hr{
+        margin-left : 20em;
+    }
+    .btn-default{
+        margin-left: 22em;
+    }
+    .student_name label{
+    font-weight: 500;
+    margin-left: 3em;
+        font-size : 1.3em;
+    }
+    .student_roll, .student_name{
+        font-weight: 500;
+        font-size : 1.3em;
+    }
+}
+#selectAll{
+    font-size: 1em;
+    text-align: left;
+}
+#selectAll input[type="checkbox"]{
+    width : 20px;
+    height : 20px;
+}
+

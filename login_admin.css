@@ -1,0 +1,237 @@
+@import 'https://fonts.googleapis.com/css?family=Khand';
+
+body,
+html {
+    height: 100%;
+        font-family: 'Khand', sans-serif;
+
+}
+div.navbar.navbar-inverse{
+    margin-bottom: 0;
+    z-index: 999;
+
+}
+a.dropdown-toggle{
+    margin-right: 25px;
+    text-align: right;
+}
+
+
+#admin_login {
+    position: relative;
+    display: inline-flex;
+    color:white;
+    margin-left: 90%;
+    margin-top: 1em;
+    cursor: context-menu;
+    transition: .35s ease-out;
+}
+
+#admin_logout a {
+    position: relative;
+    color : white;
+    opacity:0.7;
+    font-size:20px;
+}
+
+nav.sidebar,
+.main {
+    -webkit-transition: margin 200ms ease-out;
+    -moz-transition: margin 200ms ease-out;
+    -o-transition: margin 200ms ease-out;
+    transition: margin 200ms ease-out;
+        z-index: 899;
+
+}
+
+img{
+    width: 200px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.main {
+    padding: 10px 10px 0 10px;
+}
+
+@media (min-width: 765px) {
+    .main {
+        position: absolute;
+        width: calc(100% - 40px);
+        margin-left: 40px;
+        float: right;
+    }
+
+    nav.sidebar:hover + .main {
+        margin-left: 200px;
+    }
+    nav.sidebar.navbar.sidebar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: 0px;
+    }
+    nav.sidebar .navbar-brand,
+    nav.sidebar .navbar-header {
+        text-align: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+    nav.sidebar a {
+        padding-right: 13px;
+    }
+    nav.sidebar .navbar-nav > li:first-child {
+        border-top: 1px #e5e5e5 solid;
+    }
+    nav.sidebar .navbar-nav > li {
+        border-bottom: 1px #e5e5e5 solid;
+    }
+    nav.sidebar .navbar-nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    nav.sidebar .navbar-collapse,
+    nav.sidebar .container-fluid {
+        padding: 0 ;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+        color: #777;
+    }
+    nav.sidebar {
+        width: 200px;
+        height: 100%;
+        margin-left: 0px;
+        float: left;
+        margin-bottom: 0px;
+    }
+    nav.sidebar li {
+        width: 100%;
+    }
+    nav.sidebar:hover {
+        margin-left: 0px;
+    }
+    .forAnimate {
+        opacity: 1;
+    }
+
+}
+
+@media (min-width: 1330px) {
+    .main {
+        width: calc(100% - 200px);
+        margin-left: 200px;
+    }
+
+    nav.sidebar {
+        margin-left: 0px;
+        float: left;
+    }
+    nav.sidebar .forAnimate {
+        opacity: 1;
+    }
+}
+
+nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover,
+nav.sidebar .navbar-nav .open .dropdown-menu>li>a:focus {
+    color: #CCC;
+    background-color: transparent;
+}
+
+nav:hover .forAnimate {
+    opacity: 1;
+}
+
+section {
+    padding-left: 15px;
+}
+
+@media (max-width: 756px) {
+    img{
+        display: none;
+    }
+
+
+}
+.snack-wrap {
+  display:block;
+  position:fixed;
+  bottom:0px;
+  left:10px;
+  padding:0px;
+  margin-left : 40%;
+}
+
+.snackbar {
+  display:block;
+  background:#222;
+  border:#f2f2f2;
+  padding:10px 40px 10px 20px;
+  color:#fff;
+  position:relative;
+  left:0px;
+  bottom:-70px;
+  transition: bottom 0.5s ease-in-out;
+  z-index:9;
+}
+.snackclose, label#snackbar_add {
+  bottom:-70px;
+  position:absolute;
+  border:0;
+}
+.snackclose {
+  display:none;
+  z-index:10;
+}
+label#snackbar_add {
+  z-index:11;
+  display:block;
+  width:100%;
+  height:100%;
+  color:rgba(255,255,255,0.8);
+  cursor:pointer;
+}
+.animated {
+  animation-name: snackbar-show;
+  animation-duration: 0.5s;
+  animation-direction: forwards;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.snackclose:checked~.snackbar, .snackclose:checked, .snackclose:checked+label {
+  animation-name: snackbar-hide;
+  animation-delay:0s;
+}
+@keyframes snackbar-show {
+   0%{ bottom:-70px; }
+  90%, 95% {bottom:15px; }
+  92.5%, 100% {bottom:10px; }
+}
+@keyframes snackbar-hide {
+   0%, 7.5% {bottom:10px; }
+  5%,10% {bottom:15px; }
+  100% {bottom:-70px; }
+}
+@media (min-width: 800px){
+    #admin_login{
+        position:absolute;
+        display: inline-block;
+
+    }
+
+}
+
+@media (max-width : 800px){
+    #admin_logout a {
+    position: absolute;
+        display: inline-block;
+
+    color : white;
+    opacity:0.7;
+    font-size:15px;
+        margin-top : -3em;
+        margin-left : -1em;
+}
+}
